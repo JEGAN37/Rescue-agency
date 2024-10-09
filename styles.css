@@ -1,0 +1,171 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    top: 0;
+    justify-content: center;
+    padding: 5px 5px;
+    border-radius: 20px;
+    background-color: #e2e6eb;
+    /* Keeps your background color */
+}
+
+/* Header image styling */
+.header-image {
+    width: 1150px;
+    /* Set a fixed width for the rectangle */
+    height: 200px;
+    /* Set a fixed height for the rectangle */
+    object-fit: cover;
+    border-radius: 10px;
+    /* Ensures the image fills the rectangle */
+}
+
+/* Navigation styling */
+nav {
+    position: relative;
+    width: 450px;
+    height: 50px;
+    background: #222;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* Creates space between header and nav */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigation links styling */
+nav a {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 23px;
+    z-index: 1;
+}
+
+/* Moving gradient on hover */
+nav span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 100%;
+    background: linear-gradient(45deg, #4f1919, #ff3333);
+    border-radius: 8px;
+    transition: .3s;
+}
+
+/* Adjusts hover effects */
+nav a:nth-child(1):hover~span {
+    left: 0;
+}
+
+nav a:nth-child(2):hover~span {
+    left: 85px;
+}
+
+nav a:nth-child(3):hover~span {
+    left: 165px;
+    width: 110px;
+}
+
+nav a:nth-child(4):hover~span {
+    left: 260px;
+    width: 115px;
+}
+
+nav a:nth-child(5):hover~span {
+    left: 350px;
+    width: 110px;
+}
+
+.btn {
+    position: relative;
+    font: inherit;
+    color:#0ef;
+    width: 180px;
+    height: 60px;
+    padding: 10px 25px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    background: transparent;
+    
+    border: 2px solid #0ef;
+    cursor: pointer;
+    z-index: 1;
+    transition: .3s;
+    margin-bottom: 100%;
+    margin: 10px auto;
+    
+}
+
+/* Button hover effect */
+.btn:hover {
+    color: #1f242d;
+    box-shadow: 0 0 5px #0ef, 0 0 5px #0ef inset;
+}
+
+/* Button's after-effect */
+.btn::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: rgb(238, 7, 38);
+    box-shadow: 0 0 20px #0ef;
+    z-index: -1;
+    transition: .3s;
+}
+
+/* Expand the button's background on hover */
+.btn:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+/* Body background */
+body {
+    background-color: #f6eaea;
+    color: #fff;
+    /* Set to black as per your original code */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.img 
+{
+    margin-left: -390px;
+    margin-bottom: -478px;
+    margin-top: 90px;
+}
+.helloo
+{
+    
+    margin-left: 300px;
+    margin-bottom: -210px;
+}
+.card-img-top:hover {
+    opacity: 0.5;
+  }
+.img:hover{
+    opacity: 0.5;
+}
+.helloo:hover{
+    opacity:0.5;
+}
